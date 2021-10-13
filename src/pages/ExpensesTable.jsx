@@ -42,16 +42,16 @@ class ExpensesTable extends Component {
       <tbody className="table-body">
         { expenses
           .map(({ id, value, description, currency, method, tag, exchangeRates }) => (
-            <tr key={ id }>
-              <td>{ description }</td>
-              <td>{ tag }</td>
-              <td>{ method }</td>
-              <td>{ value }</td>
-              <td>{ (exchangeRates[currency].name).split('/')[0] }</td>
-              <td>{ parseFloat(exchangeRates[currency].ask).toFixed(2) }</td>
-              <td>{(value * exchangeRates[currency].ask).toFixed(2)}</td>
-              <td>Real</td>
-              <td>
+            <tr role="row" key={ id }>
+              <td role="cell">{ description }</td>
+              <td role="cell">{ tag }</td>
+              <td role="cell">{ method }</td>
+              <td role="cell">{ value }</td>
+              <td role="cell">{ (exchangeRates[currency].name).split('/')[0] }</td>
+              <td role="cell">{ parseFloat(exchangeRates[currency].ask).toFixed(2) }</td>
+              <td role="cell">{(value * exchangeRates[currency].ask).toFixed(2)}</td>
+              <td role="cell">Real</td>
+              <td role="cell">
                 <button
                   data-testid="edit-btn"
                   type="button"

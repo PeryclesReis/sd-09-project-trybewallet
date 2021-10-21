@@ -1,0 +1,57 @@
+.editExpense-content {
+  background-color: #00294b;
+  margin: auto;
+  padding: 35px 0;
+  width: 100%;
+}
+
+.editExpense-content button {
+  background-color: #29567a;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 40px;
+  width: 170px;
+}
+
+.editExpense-content button:hover {
+  box-shadow: 2px 4px 20px white;
+}
+
+.edit-forms {
+  align-items: center;
+  color: aliceblue;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+.input-value {
+  border: none;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+.input-value:focus {
+  box-shadow: 1px 2px 15px white;
+}
+
+.input-description {
+  border: none;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 5px;
+  width: 190px;
+}
+
+.input-description:focus {
+  box-shadow: 1px 2px 15px white;
+}
